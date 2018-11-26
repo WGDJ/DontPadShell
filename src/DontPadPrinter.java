@@ -18,7 +18,7 @@ public class DontPadPrinter {
 	}
 	
 	public void append(String msg) throws Exception{
-		this.put(get() + lineSeparatorSplit + msg);
+		this.put(get() +  lineSeparatorBreakLine + msg);
 	
 	}
 	
@@ -51,7 +51,7 @@ public class DontPadPrinter {
 	}
 	
 	private HashMap<String, StringBuilder> appendParam(String param, HashMap<String, StringBuilder> params) {
-		params.get("text").append(param + lineSeparatorSplit);
+		params.get("text").append(param + lineSeparatorBreakLine);
 		return params;
 	}
 	
